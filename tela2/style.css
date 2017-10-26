@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+main{
+    height: 100%;
+    background-image: url(images/road.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0
+}
+
+#overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, white, rgba(150,150,150,.8));
+    z-index:1;
+    font-family: calibri;
+}
+
+.logo{
+    display: block;
+    margin: 100px auto;
+}
+
+/**Formulario**/
+
+.formulario {
+width: 70%;
+    max-width: 300px;
+height: auto;
+margin: 0 auto;
+}
+
+.formulario__input {
+display: block;
+border: none;
+border-bottom: 1px solid rgba(255, 0, 0, 0.8);
+width: 100%;
+font-size: 1.3em;
+padding: 2%;
+    background: transparent;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+
+.formulario__label {
+color: red;
+text-transform: uppercase;
+font-size: 14px;
+    font-weight: bold;
+}
+
+.forgot-pw {
+    color: white;
+   float: right;
+    text-decoration: none;
+}
+
+.btn-login{
+    width:100%;
+    
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: lightcoral;
+    background: white;
+    border-radius: 25px;
+    border: 0;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.contact-with {
+width: 70%;
+margin: 0 auto;
+position: relative;
+}
+
+.contact-with__divisao-inicio {
+width: 25%;
+float: left;
+color: #79797a;
+position: relative;
+top: 7px;
+}
+
+.contact-with__frase {
+text-align: center;
+width: 100%;
+float: left;
+text-transform: uppercase;
+font-size: 0.7em;
+color: #79797a;
+padding: 0;
+margin: 0;
+}
+
+.contact-with__divisao-final {
+position: relative;
+width: 25%;
+float: right;
+color: #79797a;
+top: -7px;
+}
+
+.btn-facebook{
+color: white;
+font-weight: bold;
+background-color: #2F5C9D;
+border-radius: 25px;
+padding: 10px;
+width: 120px;
+font-size: 10px;
+    border: 0;
+    margin-right: 10px;
+    position: relative;
+    box-shadow: 0px 1px 1px 1px #555;
+    cursor: pointer;
+}
+
+.btn-facebook i{
+    font-size: 16px;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+}
+
+.button__btn-google{
+width: 120px;
+padding:  10px;
+font-size: 10px;
+font-weight: bold;
+color:white;
+background: red;
+border: 0;
+border-radius: 25px;
+display: inline-block;
+position: relative;
+text-transform: uppercase;
+    box-shadow: 0px 1px 1px 1px #555;
+    cursor: pointer;
+}
+
+.img__google{
+top: 1opx;
+left:15px;
+width: 14px;
+height: 14px;
+display: inline-block;
+position: absolute;
+}
+
+.buttons{
+    text-align: center;
+    margin-top: 20px;
+}
