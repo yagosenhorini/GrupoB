@@ -57,7 +57,7 @@
 }
 
 table.borda {
-    width: 410px;
+    width: 425px;
     border-collapse: collapse;
 }
 
@@ -79,8 +79,142 @@ table.borda td {
 }
 
 .facebook {
-    max-width: 398px;
-    max-height: 406px;
+    width: 415px;
+    max-height: 425px;
     margin: 10px 5px;
     border: 2px solid gray;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html,
+    body {
+        width: 100%;
+    }
+    #works {
+        width: 100%;
+        height: auto;
+    }
+    .carousel-label {
+        width: 100%;
+    }
+    table.borda {
+        width: 100%;
+        min-width: 767px;
+        max-width: 991px;
+        margin-bottom: 3px;
+        border-collapse: collapse;
+    }
+    table.borda tr:first-child {
+        border-bottom: 1px solid gray;
+    }
+    table.borda td {
+        border-left: 1px solid gray;
+    }
+    .conteudo {
+        margin-left: 10px;
+    }
+    .facebook {
+        width: 754px;
+        max-width: 1010px;
+        max-height: 500px;
+        margin: 10px 5px;
+        border: 2px solid gray;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 2048px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html,
+    body {
+        width: 100%;
+    }
+    #works {
+        width: 100%;
+        height: auto;
+    }
+    .carousel-label {
+        width: 860px;
+        padding: 3px;
+        text-align: center;
+        float: right;
+    }
+    .left-arrow::before {
+        width: 0;
+        height: 0;
+        margin: 7px 15px;
+        content: "";
+        vertical-align: middle;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 5px solid gray;
+        cursor: pointer;
+        float: left;
+    }
+    .label-title {
+        margin: 3px 0;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        vertical-align: middle;
+        display: inline-block;
+    }
+    .right-arrow::before {
+        width: 0;
+        height: 0;
+        margin: 7px 10px 0 0;
+        content: "";
+        vertical-align: middle;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid gray;
+        cursor: pointer;
+        float: right;
+    }
+    .lateral {
+        width: 400px;
+        height: auto;
+        padding: 600px 200px;
+        background: gray;
+        border: 1px solid black;
+        float: left;
+        top: 0;
+    }
+    article {
+        float: right;
+    }
+    table.borda {
+        width: 425px;
+        margin: 10px 5px 30px 5px;
+        border-collapse: collapse;
+        float: left;
+    }
+    table.borda tr:first-child {
+        border-bottom: 1px solid gray;
+    }
+    table.borda td {
+        border-left: 1px solid gray;
+    }
+    .conteudo {
+        margin-left: 10px;
+    }
+    .facebook {
+        width: 850px;
+        max-height: 550px;
+        margin: 10px 5px;
+        border: 2px solid gray;
+        display: block;
+        float: right;
+    }
+    .clear {
+        clear: both;
+    }
 }
